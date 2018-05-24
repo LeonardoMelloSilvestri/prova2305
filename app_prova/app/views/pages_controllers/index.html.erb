@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pages Controllers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pages_controllers.each do |pages_controller| %>
+      <tr>
+        <td><%= link_to 'Show', pages_controller %></td>
+        <td><%= link_to 'Edit', edit_pages_controller_path(pages_controller) %></td>
+        <td><%= link_to 'Destroy', pages_controller, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pages Controller', new_pages_controller_path %>

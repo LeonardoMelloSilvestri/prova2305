@@ -6,9 +6,30 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   </head>
 
   <body>
-    <%= yield %>
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark">		  
+		  <a class="navbar-brand" href="/">Prova</a>
+		  <ul class="navbar-nav">
+		    <li class="nav-item">
+		      <a class="nav-link" href="/mvc">Página MVC</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="/http">Página HTTP</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="/frameworks">Página Frameworks</a>
+		    </li>
+		   	<li class="nav-item">
+		      <a class="nav-link" href="/api">Página API</a>
+		    </li>
+			  <li class="nav-item">
+		      <a class="nav-link" href="/git">Página GIT</a>
+		    </li>
+		  </ul>
+		</nav>
+		<%= yield %>
   </body>
 </html>
